@@ -20,7 +20,9 @@ new Vue({
   components: { App },
   template: '<App/>',
   created () {
-    
+    fb.initializeApp({
+     //check console of firebase
+    })
     })
 
     fb.auth().onAuthStateChanged(user => {

@@ -20,13 +20,7 @@ new Vue({
   components: { App },
   template: '<App/>',
   created () {
-    fb.initializeApp({
-      apiKey: 'AIzaSyAuDikCSI6t-yBL6VEW7m4DRnwsm1DxU1A',
-      authDomain: 'gorizont33-52047.firebaseapp.com',
-      databaseURL: 'https://gorizont33-52047.firebaseio.com',
-      projectId: 'gorizont33-52047',
-      storageBucket: 'gorizont33-52047.appspot.com',
-      messagingSenderId: '364429349880'
+    
     })
 
     fb.auth().onAuthStateChanged(user => {
